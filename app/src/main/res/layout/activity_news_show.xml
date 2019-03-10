@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="be.kuleuven.softdev.haientang.newsclient.NewsShowActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/myLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:contentDescription="@string/head"
+                    app:srcCompat="@drawable/profile" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/title"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newsdate" />
+
+            <TextView
+                android:id="@+id/Tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/tags"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/newsImageUp"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_border"
+                android:contentDescription="@string/image1" />
+
+            <TextView
+                android:id="@+id/Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/content" />
+
+            <ImageView
+                android:id="@+id/newsImageDown"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textview_border"
+                android:contentDescription="@string/image2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/likesIcon"
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/thumbup"
+                    app:srcCompat="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/likesNr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/nr"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ButSubmit"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/submitBut" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="serif"
+                android:text="@string/user_comments"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/CommentBoard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:hint="@string/make_your_comment"
+                android:inputType="textMultiLine|textShortMessage|textLongMessage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/NewsOverView"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="@string/news"
+        android:textColor="#ffee9cff"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/searchIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="65dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/profilepic"
+        app:srcCompat="@drawable/profile"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/Sports"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BreakingNews"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-112dp"
+        android:background="?attr/colorButtonNormal"
+        android:text="@string/sports"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/Economy"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BreakingNews"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-112dp"
+        android:background="@android:color/holo_purple"
+        android:text="@string/economy"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/China"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Sports"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/china"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/BreakingNews"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/breaking_news"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/lvNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/BreakingNews" />
+
+</RelativeLayout>

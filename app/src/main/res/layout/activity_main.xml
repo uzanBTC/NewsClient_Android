@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
+        android:layout_above="@+id/butLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo_kul" />
+
+    <Button
+        android:id="@+id/butLogin"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butRegister"
+        android:layout_alignLeft="@+id/butRegister"
+        android:layout_alignStart="@+id/butRegister"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/butRegister"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butGuest"
+        android:layout_alignLeft="@+id/butGuest"
+        android:layout_alignStart="@+id/butGuest"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/butGuest"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Administrator"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="127dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/guest" />
+
+    <TextView
+        android:id="@+id/Term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginBottom="14dp"
+        android:text="@string/terms_of_use"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Administrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Term"
+        android:layout_alignBottom="@+id/Term"
+        android:layout_centerHorizontal="true"
+        android:text="@string/administrator"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/advertiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Term"
+        android:layout_marginEnd="50dp"
+        android:text="Editors"
+        android:textStyle="bold" />
+
+</RelativeLayout>

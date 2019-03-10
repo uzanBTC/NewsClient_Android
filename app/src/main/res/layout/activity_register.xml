@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="be.kuleuven.softdev.haientang.newsclient.RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="serif"
+                android:text="@string/sign_up_for_free"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/profilepic"
+                    app:srcCompat="@drawable/profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/firstname"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/surname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:hint="@string/surname"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/emailpic"
+                    app:srcCompat="@drawable/email" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="274dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/example_hello_world_kuleuven_be"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/passwdpic"
+                    app:srcCompat="@drawable/password" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/passwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/repeatPasswd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="@string/confirm_password"
+                        android:inputType="textPassword"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/multiline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:text="@string/must_start_with_upper_case_letter_contain_at_least_one_digit_be_8_16_characters"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/butSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
